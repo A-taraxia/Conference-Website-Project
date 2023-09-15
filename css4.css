@@ -1,0 +1,492 @@
+
+body {
+	/* <--!εικόνα background--> */
+  background-image:url("https://i.pinimg.com/originals/30/08/27/3008275ca58fae8bad97a753de460f1b.jpg"); 
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  font-size: 20pt;  
+  font-family:Garamond;
+}
+table {
+  background-color: white;
+  width: 100%;
+  border: 1px solid #ddd;
+  height: 20%;
+
+}
+p{
+  text-align: left;
+  font-size: 25px;
+}
+ul.lista{
+	  text-align:left;
+	  list-style:none;
+	  font-family:Garamond;
+}
+
+
+a{
+text-decoration:none;	
+}
+
+.h1{
+	/* Για τον τίτλο  */
+	font-size:30; 
+	color:navy;
+}
+
+
+
+
+/* κλάση για τα div που έχουν ασπρο background*/
+.myDiv {
+  background-color: white;
+  width:100%;
+  text-align: center;
+  color:black;
+  font-size:20px;
+}
+
+.hrr{
+	width:50%;
+	color:#6666ff;
+}
+
+/* Για την γραμμή με τα link προς τις άλλες σελίδες */
+
+nav{
+background:#6666ff;
+width:100%;
+overflow:auto;
+}
+nav ul{
+	list-style:none;
+}
+nav ul li {
+	float:left;
+		}										
+nav ul li a{
+width:250px;
+display:block;
+text-decoration:none;
+text-align:center;
+background:#6666ff;
+font-size: 25px;
+color:white;
+padding:25px 50px;
+}
+li a:hover{
+	background-color:yellow;
+	color:#6666ff;
+}
+
+
+.emoji{
+	color:white;
+	font-size:27px;
+	font-family:fantasy;
+	line-height:120px;
+	padding:0 100px;
+	float:left;
+}
+
+/* Κεντρική εικόνα τοποθεσίας */
+.lond{
+	width: 1475px;
+	height:450px;
+	max-width: 100%;
+}
+/* Σελίδα τοποθεσίας-τίτλοι */
+.per{
+	color:black;
+	margin:0;
+	font-family:Papyrus;
+}
+
+/* Εικόνες με αξιοθέατα */
+.round{
+	 width:85%;
+	  border-radius: 80%;
+}
+.round:hover{
+	transform:translateY(15px);
+}
+.round:hover:before{
+	opacity:1;
+}
+
+/* Περιγραφή-αξιοθέατα της τοποθεσίας */
+.disc{
+	font-size:17px;
+	text-align:left;
+	background-color:#FFFAAA;
+}
+/* Φώτο στους πινακες τοποθεσίας */
+.jen{
+	width:200px;
+	height:auto;
+}
+/* πινακες τοποθεσίας(ξενοδοχεια,φαγητο,μπαρ) */
+.tab{
+	width:30%;
+	border:1px solid gray;
+	background-color:#D1D0C5;
+	border-collapse: collapse;
+}
+/* δεν εχω ιδέα */
+.loj{
+	font-size:17px;
+	font-family:Monospace;
+	text-align:center;
+}
+/* Για περιγραφή στους πινακες τοποθεσίας(σε αυτο με τα αστεράκια) */
+.review{
+	font-size:14px;
+	color:#9D9C8A ;
+	text-align:center;
+}
+/* εικονα που γινεται zoom στο μενου */
+img.photo {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s;
+}
+
+photo:hover {
+  width: 150px;
+  height: 120px;
+}
+/* εικόνες διοργανωτών στην κεντρική σελιδα */
+img.dior{
+	width:100px;
+	height:100px;
+	border-radius: 80%;
+	margin:70px;
+	
+}
+/* Μενου-οργάνωση */
+.hov:hover{
+	color:blue;
+}
+/* Για την λίστα των συνεδρίων στην κεντρική σελίδα */
+.nobul{
+	list-style-type:none;
+	text-align:left;
+}
+/* Για να μην έχουν κιτρινο background τα link της λίστας  */
+.al:hover{
+	background-color:white;
+	color:blue;
+}
+
+
+/*******************/
+* {
+  box-sizing: border-box;
+}
+.timeline {
+  position: relative;
+  width:100%;
+  margin: 0 auto;
+  background-color:white;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: orange;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.cont {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+.cont::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid orange;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent grey;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent grey transparent transparent;
+}
+
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: grey;
+  position: relative;
+  border-radius: 6px;
+  color:white;
+
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  
+  .cont {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  .cont::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+}
+#hmeromhnia{
+	color:orange;
+	background-color:white;
+	font-size:100%;
+	padding:10px;
+}
+.ppl {
+  font-size: 4vw;
+  color: navy;
+  column-span: 4;
+}
+.proswpa {
+  background-color: white;
+  width: 10%;
+  border: 1px solid #ddd;
+  height: 20%;
+
+}
+#face {
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 30%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size:2vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.words {
+  padding: 10px;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-size:1vw;
+  height:100%;
+  }
+.imgs {
+  width: 25%;
+  padding: 5px;
+}
+#form{
+	background-color:white;
+	width:100%;
+	color:black;
+	font-size:20px;
+	border:solid 3px orange;
+	line-height: 1.6;
+	
+}
+#f4{padding-top:20px;
+}
+.signin {
+  background-color: #FABC62;
+  text-align: center;
+  width:100%;
+}
+input[type=text], input[type=password],input[type=email],input[type=tel] {
+  width: 50%;
+  margin: 5px 0 22px 0;
+  height: 50%
+  display: block;
+  border: none;
+  background: #f1f1f1;
+  padding: 12px 20px;
+}
+.rd{color: dodgerblue;}
+#redirect{
+	text-align: center;
+	padding:3px;
+}
+
+#forma{	
+text-align:left;
+padding:20px;
+}
+.form{
+	float:left;
+}
+#f4{padding-top:20px;
+}
+.signin {
+  background-color: #FABC62;
+  text-align: center;
+  width:100%;
+}
+input[type=text], input[type=password],input[type=email],input[type=tel] {
+  width: 50%;
+  margin: 5px 0 22px 0;
+  height: 50%
+  display: block;
+  border: none;
+  background: #f1f1f1;
+  padding: 12px 20px;
+}
+.rd{color: dodgerblue;}
+#redirect{
+	text-align: center;
+	padding:3px;
+}
+.cancelbtn {
+ background-color:red;
+  border-radius:70%;
+  border:none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.cancelbtn, .signupbtn {
+  float: right;
+  width: 30%;
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 50%;
+  }
+}
+.signupbtn {
+  background-color:green;
+  border-radius:70%;
+  color: white;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+hr{
+	border:solid 1px orange;
+	width:50%;
+}
+.row {
+  display: flex;
+}
+/*******************/
+
+
+
+
+
+
